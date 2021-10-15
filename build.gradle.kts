@@ -24,6 +24,10 @@ tasks.withType<KotlinCompile>() {
     kotlinOptions.jvmTarget = "11"
 }
 
+tasks.getByName("run", JavaExec::class) {
+    standardInput = System.`in`
+}
+
 application {
-    mainClass.set("MainKt")
+    mainClass.set("stage3.project.MainKt")
 }
