@@ -7,7 +7,7 @@ fun main() {
 
     if (h < a) {
         println("Deficiency")
-    } else if (a <= h && h <= b) {
+    } else if (h in a..b) {
         println("Normal")
     } else {
         println("Excess")
